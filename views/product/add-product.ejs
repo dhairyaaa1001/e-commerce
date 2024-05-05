@@ -1,0 +1,148 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sufee Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="/admin/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/admin/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="/admin/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/admin/vendors/selectFX/css/cs-skin-elastic.css">
+
+    <link rel="stylesheet" href="/admin/assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+    <!-- Left Panel -->
+
+    <%-include('../sidebar')%>
+        <!-- Left Panel -->
+
+        <!-- Right Panel -->
+
+        <div id="right-panel" class="right-panel">
+
+            <!-- Header-->
+            <%-include('../header')%>
+                <!-- Header-->
+
+
+
+                <div class="content mt-3">
+                    <div class="animated fadeIn">
+
+
+                        <div class="row">
+                            <div class='col-12'>
+                                <div class='card'>
+                                    <div class="card-header">
+                                        <strong>Product Form</strong>
+                                    </div>
+                                    <div class='card-body card-block'>
+                                        <form action="productform" method="post" class="form-horizontal" enctype="multipart/form-data" id="myform1">
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="text-input"
+                                                        class=" form-control-label">Product Name</label></div>
+                                                <div class="col-12 col-md-9"><input type="text" name="name"
+                                                        placeholder="Enter product Name" class="form-control" required></div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="textarea-input"
+                                                        class=" form-control-label">Product Details</label></div>
+                                                <div class="col-12 col-md-9"><textarea name="detail" rows="9"
+                                                        placeholder="Enter Product Details"
+                                                        class="form-control" required></textarea></div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label
+                                                        class=" form-control-label">Price of Product</label></div>
+                                                <div class="col-12 col-md-9"><input type="text" name="price"
+                                                        placeholder="Enter the price" class="form-control" required></div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="password-input"
+                                                        class=" form-control-label">Category</label></div>
+                                                <div class="col-12 col-md-9"><input type="text" name="category"
+                                                        placeholder="Enter product category" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="file-input" class=" form-control-label">File input</label></div>
+                                                <div class="col-12 col-md-9"><input type="file" id="file-input" name="photo" class="form-control-file" required></div>
+                                            </div>
+                                            <input type="submit">
+                                        </form>
+                                        <!--<form action="productform" method="post" class="form-horizontal"
+                                            enctype="multipart/form-data">
+
+                                            
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="textarea-input"
+                                                        class=" form-control-label">Product Details</label></div>
+                                                <div class="col-12 col-md-9"><textarea name="detail" rows="9"
+                                                        placeholder="Enter Product Details"
+                                                        class="form-control"></textarea></div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="email-input"
+                                                        class=" form-control-label">Price of Product</label></div>
+                                                <div class="col-12 col-md-9"><input type="text" name="price"
+                                                        placeholder="Enter the price" class="form-control"></div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="password-input"
+                                                        class=" form-control-label">Category</label></div>
+                                                <div class="col-12 col-md-9"><input type="text" name="category"
+                                                        placeholder="Enter product category" class="form-control">
+                                                </div>
+                                            </div>
+                                            
+                                            <input type="submit">
+                                        </form>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="/admin/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/admin/vendors/popper.js/dist/umd/popper.min.js"></script>
+
+        <script src="/admin/vendors/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="/admin/vendors/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+
+        <script src="/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/admin/assets/js/main.js"></script>
+        <!-- Validation Script -->
+        <script src="../../../jquery-3.7.1.js"></script>
+    <script src="../../../jquery.validate.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myform1").validate();
+        });
+    </script>
+    
+    <!-- VAlidation Script -->
+</body>
+
+</html>
