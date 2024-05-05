@@ -97,8 +97,8 @@ router.post('/forgotpassword', function (req, res, next) {
         secure: true,
         auth: {
           // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-          user: "mynamedhairya@gmail.com",
-          pass: "hlrh hykj owde gpbp",
+          user: process.env.EMAIL_USER, // Use environment variables for sensitive data
+          pass: process.env.EMAIL_PASS,
         },
       });
 
